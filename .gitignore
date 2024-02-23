@@ -1,3 +1,10 @@
+# Build directory
+build/*
+
+# opencv build directory I used
+opencv
+opencv/*
+
 # Prerequisites
 *.d
 

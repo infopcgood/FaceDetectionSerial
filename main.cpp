@@ -6,6 +6,20 @@
 #include <termios.h>
 #include <unistd.h>
 
+#include <opencv2/core.hpp>
+#include <opencv2/videoio.hpp>
+#include <opencv2/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/imgproc/types_c.h>
+
+#include <dlib/opencv.h>
+#include <dlib/image_processing.h>
+#include <dlib/image_processing/frontal_face_detector.h>
+#include <dlib/gui_widgets.h>
+#include <dlib/image_io.h>
+
+using namespace cv;
+using namespace dlib;
 using namespace std;
 
 int initializeSerial(const char* port) {
@@ -61,19 +75,26 @@ int main(int argc, const char** argv) {
     int serial_port = initializeSerial("/dev/ttyACM0");
 
     // Initialize frame and VideoCapture
-    // Mat camFrame;
-    // VideoCapture cap;
-    // if(!cap.open(0)) {
-    //     cerr << "Error " << errno << " from VideoCapture.open(0): " << strerror(errno) << endl;
-    //     return 0;
-    // }
+    Mat camFrame, grayFrame;
+    VideoCapture cap;
+    if(!cap.open(0)) {
+        cerr << "Error " << errno << " from VideoCapture.open(0): " << strerror(errno) << endl;
+        return 0;
+    }
 
-    // cerr << "Successfully connected to camera!" << endl;
-    // cerr << "Reading images from camera...";
+    cerr << "Successfully connected to camera!" << endl;
 
-    // while(true) {
+    frontal_face_detector frontalFaceDetector = get_frontal_face_detector();
 
-    // }
+    while(true) {
+        cap.read(camFrame);
+
+        cv_image<bgr_pixel> dlibFrame(grayFrame);
+
+        std::vector<dlib::rectangle> detectedFaces = frontalFaceDetector(grayFrame);
+
+        cout << detectedFaces.size() << endl;
+    }
 
     return 0;
 }

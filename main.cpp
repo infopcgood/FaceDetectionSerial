@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string.h>
+#include <errno.h>
 
 #include <fcntl.h>
-#include <errno.h>
 #include <termios.h>
 #include <unistd.h>
 
@@ -12,9 +12,10 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/imgproc/types_c.h>
 
-#include <dlib/opencv.h>
 #include <dlib/image_processing.h>
 #include <dlib/image_processing/frontal_face_detector.h>
+#include <dlib/image_processing/render_face_detections.h>
+#include <dlib/opencv.h>
 #include <dlib/gui_widgets.h>
 #include <dlib/image_io.h>
 
@@ -75,7 +76,7 @@ int main(int argc, const char** argv) {
     int serial_port = initializeSerial("/dev/ttyACM0");
 
     // Initialize frame and VideoCapture
-    Mat camFrame, grayFrame;
+    Mat camFrame;
     VideoCapture cap;
     if(!cap.open(0)) {
         cerr << "Error " << errno << " from VideoCapture.open(0): " << strerror(errno) << endl;
@@ -85,16 +86,39 @@ int main(int argc, const char** argv) {
     cerr << "Successfully connected to camera!" << endl;
 
     frontal_face_detector frontalFaceDetector = get_frontal_face_detector();
+    shape_predictor shapePredictor;
+    deserialize("shape_predictor_68_face_landmarks.dat") >> shapePredictor;
+
+    image_window win;
 
     while(true) {
-        cap.read(camFrame);
+        if(!cap.read(camFrame)){
+            break;
+        }
 
-        cv_image<bgr_pixel> dlibFrame(grayFrame);
+        cv_image<bgr_pixel> dlibFrame(camFrame);
 
-        std::vector<dlib::rectangle> detectedFaces = frontalFaceDetector(grayFrame);
+        std::vector<dlib::rectangle> detectedFaces = frontalFaceDetector(dlibFrame);
 
-        cout << detectedFaces.size() << endl;
+        if(detectedFaces.size() != 1) {
+            cerr << "Detection error!" << endl;
+            continue;
+        }
+        dlib::rectangle face = detectedFaces[0];
+
+        full_object_detection shape = shapePredictor(dlibFrame, face);
+
+        std::vector<full_object_detection> shapes;
+        shapes.push_back(shape);
+
+        cerr << detectedFaces.size() << endl;
+
+        win.clear_overlay();
+        win.set_image(dlibFrame);
+        win.add_overlay(render_face_detections(shapes));
     }
+
+    cerr << "Bye!" << endl;
 
     return 0;
 }

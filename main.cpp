@@ -1,5 +1,6 @@
 // Standard C++ headers
 #include <iostream>
+#include <iomanip>
 #include <string.h>
 #include <errno.h>
 #include <stdint.h>
@@ -20,9 +21,7 @@
 // DLib headers
 #include <dlib/image_processing.h>
 #include <dlib/image_processing/frontal_face_detector.h>
-// #include <dlib/image_processing/render_face_detections.h>
 #include <dlib/opencv.h>
-// #include <dlib/gui_widgets.h>
 #include <dlib/image_io.h>
 
 // Default namespaces
@@ -30,6 +29,17 @@ using namespace cv;
 using namespace dlib;
 using namespace std;
 using namespace std::chrono;
+
+// Evaluate positive/negative movement
+int checkMovement(double derivative, double threshold = 50) {
+    if(derivative >= threshold) {
+        return 1;
+    }
+    else if(derivative <= -threshold) {
+        return -1;
+    }
+    else return 0;
+}
 
 // Get time in milliseconds
 uint64_t timeMS() {
@@ -88,6 +98,9 @@ int initializeSerial(const char* port) {
 }
 
 int main(int argc, const char** argv) {
+    // cerr float precision
+    cerr << setprecision(3);
+
     // Open serial port
     int serial_port = initializeSerial("/dev/ttyACM0");
 
@@ -103,17 +116,27 @@ int main(int argc, const char** argv) {
 
     cerr << "Successfully connected to camera!" << endl;
 
+    // Variables for detection results
+    double leftEyeEAR, rightEyeEAR;
+    double mouthWidth = 0, mouthHeight = 0;
+
+    // Additional variables for derivative calculation
+    double prevMouthWidth, prevMouthHeight;
+    double mouthWidthDerivative, mouthHeightDerivative;
+
     // Load detectors and predictors
     frontal_face_detector frontalFaceDetector = get_frontal_face_detector();
     shape_predictor shapePredictor;
     deserialize("shape_predictor_68_face_landmarks.dat") >> shapePredictor;
 
-    // image window for debugging
-    // image_window win;
-
     while(true) {
         // Set start time
         uint64_t startTime = timeMS();
+
+        // Set prev values for derivative calculation
+        prevMouthWidth = mouthWidth;
+        prevMouthHeight = mouthHeight;
+
         // Read frame until it can't
         if(!cap.read(camFrame)){
             cerr << "Error " << errno << " from cap.read(camFrame): " << strerror(errno) << endl;
@@ -123,10 +146,10 @@ int main(int argc, const char** argv) {
         // Convert camera frame to dlib frame
         cv_image<bgr_pixel> dlibFrame(camFrame);
 
-	// Make smallframe
-	cvtColor(camFrame, smallFrame, COLOR_BGR2GRAY);
-	resize(smallFrame, smallFrame, Size(), 0.25, 0.25);
-	cv_image<unsigned char> dlibSmallFrame(smallFrame);
+        // Make smallframe
+        cvtColor(camFrame, smallFrame, COLOR_BGR2GRAY);
+        resize(smallFrame, smallFrame, Size(), 0.25, 0.25);
+        cv_image<unsigned char> dlibSmallFrame(smallFrame);
 
         // Detect faces from converted dlib frame
         std::vector<dlib::rectangle> detectedFaces = frontalFaceDetector(dlibSmallFrame, 0);
@@ -136,27 +159,44 @@ int main(int argc, const char** argv) {
             cerr << "Detection error!" << endl;
             continue;
         }
+
         // Else, get your face
         dlib::rectangle face = detectedFaces[0];
-	face.set_left(face.left() * 4);
-	face.set_right(face.right() * 4);
-	face.set_top(face.top() * 4);
-	face.set_bottom(face.bottom() * 4);
+        face.set_left(face.left() * 4);
+        face.set_right(face.right() * 4);
+        face.set_top(face.top() * 4);
+        face.set_bottom(face.bottom() * 4);
 
         // Detect shapes from your face
         full_object_detection shape = shapePredictor(dlibFrame, face);
 
-        // Dummy vector for drawing
-        std::vector<full_object_detection> shapes;
-        shapes.push_back(shape);
+        // Get EAR values for both eyes
+        dlib::vector<double, 2> leftEyeHorizontal, leftEyeVertical, rightEyeHorizontal, rightEyeVertical;
+        leftEyeHorizontal = shape.part(39) - shape.part(36);
+        leftEyeVertical = (shape.part(37) - shape.part(41) + shape.part(38) - shape.part(40)) / 2;
+        rightEyeHorizontal = shape.part(42) - shape.part(45);
+        rightEyeVertical = (shape.part(43) - shape.part(47) + shape.part(44) - shape.part(46)) / 2;
 
-        // Draw detected shapes on window
-        // win.clear_overlay();
-        // win.set_image(dlibFrame);
-        // win.add_overlay(render_face_detections(shapes));
-        
+        leftEyeEAR = leftEyeVertical.length() / leftEyeHorizontal.length();
+        rightEyeEAR = rightEyeVertical.length() / rightEyeHorizontal.length();
+
+        // Get mouth width and height
+        dlib::vector<double, 2> mouthHorizontal, mouthVertical;
+        mouthHorizontal = shape.part(60) - shape.part(64);
+        mouthVertical = shape.part(62) - shape.part(66);
+
+        mouthWidth = mouthHorizontal.length();
+        mouthHeight = mouthVertical.length();
+
+        uint64_t finishTime = timeMS();
+
+        mouthWidthDerivative = double(1000) * (mouthWidth - prevMouthWidth) / (double)(finishTime - startTime);
+        mouthHeightDerivative = double(1000) * (mouthHeight - prevMouthHeight) / (double)(finishTime - startTime);
+
+        cerr << checkMovement(mouthWidthDerivative, 75) << " " << checkMovement(mouthHeightDerivative, 50) << endl;
+
         // Print FPS
-        cerr << 1000.0f / (double)(timeMS() - startTime) << " FPS" << endl;
+        // cerr << 1000.0f / (double)(timeMS() - startTime) << " FPS" << endl;
     }
 
     // End of program, probably will not be called since power would just cut off

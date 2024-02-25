@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_libwebp/libwebp_test.cpp" "/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build/CMakeFiles/libwebp_test.dir/libwebp_test.cpp.o"
+  "/home/protopi/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_libwebp/libwebp_test.cpp" "/home/protopi/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build/CMakeFiles/libwebp_test.dir/libwebp_test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -20,12 +20,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
-  )
-
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

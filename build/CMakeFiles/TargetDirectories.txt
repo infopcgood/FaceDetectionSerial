@@ -1,8 +1,8 @@
-/home/info/FaceDetectionSerial/build/CMakeFiles/FaceDetectionSerial.dir
-/home/info/FaceDetectionSerial/build/CMakeFiles/edit_cache.dir
-/home/info/FaceDetectionSerial/build/CMakeFiles/rebuild_cache.dir
-/home/info/FaceDetectionSerial/build/dlib_build/CMakeFiles/edit_cache.dir
-/home/info/FaceDetectionSerial/build/dlib_build/CMakeFiles/rebuild_cache.dir
-/home/info/FaceDetectionSerial/build/dlib_build/dlib/CMakeFiles/dlib.dir
-/home/info/FaceDetectionSerial/build/dlib_build/dlib/CMakeFiles/edit_cache.dir
-/home/info/FaceDetectionSerial/build/dlib_build/dlib/CMakeFiles/rebuild_cache.dir
+/home/protopi/FaceDetectionSerial/build/CMakeFiles/FaceDetectionSerial.dir
+/home/protopi/FaceDetectionSerial/build/CMakeFiles/edit_cache.dir
+/home/protopi/FaceDetectionSerial/build/CMakeFiles/rebuild_cache.dir
+/home/protopi/FaceDetectionSerial/build/dlib_build/CMakeFiles/edit_cache.dir
+/home/protopi/FaceDetectionSerial/build/dlib_build/CMakeFiles/rebuild_cache.dir
+/home/protopi/FaceDetectionSerial/build/dlib_build/dlib/CMakeFiles/dlib.dir
+/home/protopi/FaceDetectionSerial/build/dlib_build/dlib/CMakeFiles/edit_cache.dir
+/home/protopi/FaceDetectionSerial/build/dlib_build/dlib/CMakeFiles/rebuild_cache.dir

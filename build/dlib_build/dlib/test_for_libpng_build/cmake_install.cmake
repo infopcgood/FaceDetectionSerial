@@ -1,4 +1,4 @@
-# Install script for directory: /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_libpng
+# Install script for directory: /home/protopi/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_libpng
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 # Is this installation the result of a crosscompile?
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/protopi/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

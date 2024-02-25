@@ -92,9 +92,11 @@ int main(int argc, const char** argv) {
     int serial_port = initializeSerial("/dev/ttyACM0");
 
     // Initialize frame and VideoCapture
-    Mat camFrame;
+    Mat camFrame, grayFrame, smallFrame;
     VideoCapture cap;
-    if(!cap.open(0)) {
+    cap.set(CAP_PROP_FRAME_WIDTH, 640);
+    cap.set(CAP_PROP_FRAME_HEIGHT, 480);
+    if(!cap.open(0, CAP_V4L2)) {
         cerr << "Error " << errno << " from VideoCapture.open(0): " << strerror(errno) << endl;
         return 0;
     }
@@ -121,8 +123,13 @@ int main(int argc, const char** argv) {
         // Convert camera frame to dlib frame
         cv_image<bgr_pixel> dlibFrame(camFrame);
 
+	// Make smallframe
+	cvtColor(camFrame, smallFrame, COLOR_BGR2GRAY);
+	resize(smallFrame, smallFrame, Size(), 0.25, 0.25);
+	cv_image<unsigned char> dlibSmallFrame(smallFrame);
+
         // Detect faces from converted dlib frame
-        std::vector<dlib::rectangle> detectedFaces = frontalFaceDetector(dlibFrame);
+        std::vector<dlib::rectangle> detectedFaces = frontalFaceDetector(dlibSmallFrame, 0);
 
         // If you're not the only one detected, skip detection
         if(detectedFaces.size() != 1) {
@@ -131,6 +138,10 @@ int main(int argc, const char** argv) {
         }
         // Else, get your face
         dlib::rectangle face = detectedFaces[0];
+	face.set_left(face.left() * 4);
+	face.set_right(face.right() * 4);
+	face.set_top(face.top() * 4);
+	face.set_bottom(face.bottom() * 4);
 
         // Detect shapes from your face
         full_object_detection shape = shapePredictor(dlibFrame, face);

@@ -22,7 +22,7 @@
 #include <dlib/image_processing/frontal_face_detector.h>
 #include <dlib/image_processing/render_face_detections.h>
 #include <dlib/opencv.h>
-#include <dlib/gui_widgets.h>
+// #include <dlib/gui_widgets.h>
 #include <dlib/image_io.h>
 
 // Default namespaces
@@ -107,7 +107,7 @@ int main(int argc, const char** argv) {
     deserialize("shape_predictor_68_face_landmarks.dat") >> shapePredictor;
 
     // image window for debugging
-    image_window win;
+    // image_window win;
 
     while(true) {
         // Set start time
@@ -139,9 +139,9 @@ int main(int argc, const char** argv) {
         shapes.push_back(shape);
 
         // Draw detected shapes on window
-        win.clear_overlay();
-        win.set_image(dlibFrame);
-        win.add_overlay(render_face_detections(shapes));
+        // win.clear_overlay();
+        // win.set_image(dlibFrame);
+        // win.add_overlay(render_face_detections(shapes));
         
         // Print FPS
         cerr << 1000.0f / (double)(timeMS() - startTime) << " FPS" << endl;

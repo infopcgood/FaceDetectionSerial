@@ -1,0 +1,1286 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      The system is: Linux - 6.7.5-arch1-1 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/info/FaceDetectionSerial/build/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/info/FaceDetectionSerial/build/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-ZTN0zI"
+      binary: "/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-ZTN0zI"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-ZTN0zI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_698d6/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_698d6.dir/build.make CMakeFiles/cmTC_698d6.dir/build
+        make[1]: Entering directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-ZTN0zI'
+        Building C object CMakeFiles/cmTC_698d6.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_698d6.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.1 20230801 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_698d6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_698d6.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_698d6.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccAeNS8N.s
+        GNU C17 (GCC) version 13.2.1 20230801 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 13.2.1 20230801, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: eb0b45108af02c02a078961940bce3e9
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_698d6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_698d6.dir/'
+         as -v --64 -o CMakeFiles/cmTC_698d6.dir/CMakeCCompilerABI.c.o /tmp/ccAeNS8N.s
+        GNU assembler version 2.42.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42.0
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_698d6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_698d6.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_698d6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_698d6.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_698d6.dir/CMakeCCompilerABI.c.o -o cmTC_698d6 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.1 20230801 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_698d6' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_698d6.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCsC0if.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_698d6 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_698d6.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_698d6' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_698d6.'
+        make[1]: Leaving directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-ZTN0zI'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-ZTN0zI']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_698d6/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_698d6.dir/build.make CMakeFiles/cmTC_698d6.dir/build]
+        ignore line: [make[1]: Entering directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-ZTN0zI']
+        ignore line: [Building C object CMakeFiles/cmTC_698d6.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_698d6.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.1 20230801 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_698d6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_698d6.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_698d6.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccAeNS8N.s]
+        ignore line: [GNU C17 (GCC) version 13.2.1 20230801 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.1 20230801  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: eb0b45108af02c02a078961940bce3e9]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_698d6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_698d6.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_698d6.dir/CMakeCCompilerABI.c.o /tmp/ccAeNS8N.s]
+        ignore line: [GNU assembler version 2.42.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42.0]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_698d6.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_698d6.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_698d6]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_698d6.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_698d6.dir/CMakeCCompilerABI.c.o -o cmTC_698d6 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.1 20230801 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_698d6' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_698d6.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCsC0if.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_698d6 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_698d6.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccCsC0if.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_698d6] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../..]
+          arg [CMakeFiles/cmTC_698d6.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../..] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-cAktwY"
+      binary: "/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-cAktwY"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-cAktwY'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_197f7/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_197f7.dir/build.make CMakeFiles/cmTC_197f7.dir/build
+        make[1]: Entering directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-cAktwY'
+        Building CXX object CMakeFiles/cmTC_197f7.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -std=gnu++14   -v -o CMakeFiles/cmTC_197f7.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.1 20230801 (GCC) 
+        COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_197f7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_197f7.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_197f7.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -std=gnu++14 -version -o /tmp/ccIS3JZq.s
+        GNU C++14 (GCC) version 13.2.1 20230801 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 13.2.1 20230801, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/x86_64-pc-linux-gnu
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/backward
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include
+         /usr/local/include
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: f089b864c6bcbc2427e9850aa6414a11
+        COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_197f7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_197f7.dir/'
+         as -v --64 -o CMakeFiles/cmTC_197f7.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccIS3JZq.s
+        GNU assembler version 2.42.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42.0
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_197f7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_197f7.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_197f7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_197f7.dir/link.txt --verbose=1
+        /usr/bin/c++  -v CMakeFiles/cmTC_197f7.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_197f7 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/c++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: /build/gcc/src/gcc/configure --enable-languages=ada,c,c++,d,fortran,go,lto,m2,objc,obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.1 20230801 (GCC) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_197f7' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_197f7.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGfEMVC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_197f7 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_197f7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_197f7' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_197f7.'
+        make[1]: Leaving directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-cAktwY'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/x86_64-pc-linux-gnu]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/backward]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1] ==> [/usr/include/c++/13.2.1]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/x86_64-pc-linux-gnu] ==> [/usr/include/c++/13.2.1/x86_64-pc-linux-gnu]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/backward] ==> [/usr/include/c++/13.2.1/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/13.2.1;/usr/include/c++/13.2.1/x86_64-pc-linux-gnu;/usr/include/c++/13.2.1/backward;/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include;/usr/local/include;/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:4 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-cAktwY']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_197f7/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_197f7.dir/build.make CMakeFiles/cmTC_197f7.dir/build]
+        ignore line: [make[1]: Entering directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-cAktwY']
+        ignore line: [Building CXX object CMakeFiles/cmTC_197f7.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -std=gnu++14   -v -o CMakeFiles/cmTC_197f7.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.1 20230801 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_197f7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_197f7.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_197f7.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -std=gnu++14 -version -o /tmp/ccIS3JZq.s]
+        ignore line: [GNU C++14 (GCC) version 13.2.1 20230801 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.1 20230801  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/x86_64-pc-linux-gnu]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../include/c++/13.2.1/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: f089b864c6bcbc2427e9850aa6414a11]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_197f7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_197f7.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_197f7.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccIS3JZq.s]
+        ignore line: [GNU assembler version 2.42.0 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.42.0]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=gnu++14' '-v' '-o' 'CMakeFiles/cmTC_197f7.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_197f7.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_197f7]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_197f7.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_197f7.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_197f7 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: /build/gcc/src/gcc/configure --enable-languages=ada c c++ d fortran go lto m2 objc obj-c++ --enable-bootstrap --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --with-build-config=bootstrap-lto --with-linker-hash-style=gnu --with-system-zlib --enable-__cxa_atexit --enable-cet=auto --enable-checking=release --enable-clocale=gnu --enable-default-pie --enable-default-ssp --enable-gnu-indirect-function --enable-gnu-unique-object --enable-libstdcxx-backtrace --enable-link-serialization=1 --enable-linker-build-id --enable-lto --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --disable-libssp --disable-libstdcxx-pch --disable-werror]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 13.2.1 20230801 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_197f7' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_197f7.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccGfEMVC.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_197f7 /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1 -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../.. CMakeFiles/cmTC_197f7.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccGfEMVC.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_197f7] ==> ignore
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../..] ==> dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../..]
+          arg [CMakeFiles/cmTC_197f7.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib/crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1] ==> [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtbeginS.o;/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-pc-linux-gnu/13.2.1;/usr/lib;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "dlib/dlib/CMakeLists.txt:335 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-zMGJvB"
+      binary: "/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-zMGJvB"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-zMGJvB'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1105b/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_1105b.dir/build.make CMakeFiles/cmTC_1105b.dir/build
+        make[1]: Entering directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-zMGJvB'
+        Building C object CMakeFiles/cmTC_1105b.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_1105b.dir/src.c.o -c /home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-zMGJvB/src.c
+        Linking C executable cmTC_1105b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1105b.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_1105b.dir/src.c.o -o cmTC_1105b 
+        make[1]: Leaving directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-zMGJvB'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:682 (check_library_exists)"
+      - "dlib/dlib/CMakeLists.txt:398 (include)"
+    checks:
+      - "Looking for XOpenDisplay in /usr/lib/libX11.so;/usr/lib/libXext.so"
+    directories:
+      source: "/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-pyzM33"
+      binary: "/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-pyzM33"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "X11_LIB_X11_SOLO"
+      cached: true
+      stdout: |
+        Change Dir: '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-pyzM33'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1fb81/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_1fb81.dir/build.make CMakeFiles/cmTC_1fb81.dir/build
+        make[1]: Entering directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-pyzM33'
+        Building C object CMakeFiles/cmTC_1fb81.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay -o CMakeFiles/cmTC_1fb81.dir/CheckFunctionExists.c.o -c /home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-pyzM33/CheckFunctionExists.c
+        Linking C executable cmTC_1fb81
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1fb81.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=XOpenDisplay CMakeFiles/cmTC_1fb81.dir/CheckFunctionExists.c.o -o cmTC_1fb81  /usr/lib/libX11.so /usr/lib/libXext.so 
+        make[1]: Leaving directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-pyzM33'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:697 (check_function_exists)"
+      - "dlib/dlib/CMakeLists.txt:398 (include)"
+    checks:
+      - "Looking for gethostbyname"
+    directories:
+      source: "/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-PERAp0"
+      binary: "/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-PERAp0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_GETHOSTBYNAME"
+      cached: true
+      stdout: |
+        Change Dir: '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-PERAp0'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d9c10/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_d9c10.dir/build.make CMakeFiles/cmTC_d9c10.dir/build
+        make[1]: Entering directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-PERAp0'
+        Building C object CMakeFiles/cmTC_d9c10.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname -o CMakeFiles/cmTC_d9c10.dir/CheckFunctionExists.c.o -c /home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-PERAp0/CheckFunctionExists.c
+        Linking C executable cmTC_d9c10
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9c10.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=gethostbyname CMakeFiles/cmTC_d9c10.dir/CheckFunctionExists.c.o -o cmTC_d9c10 
+        make[1]: Leaving directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-PERAp0'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:711 (check_function_exists)"
+      - "dlib/dlib/CMakeLists.txt:398 (include)"
+    checks:
+      - "Looking for connect"
+    directories:
+      source: "/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-vJb09K"
+      binary: "/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-vJb09K"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_CONNECT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-vJb09K'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d925c/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_d925c.dir/build.make CMakeFiles/cmTC_d925c.dir/build
+        make[1]: Entering directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-vJb09K'
+        Building C object CMakeFiles/cmTC_d925c.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect -o CMakeFiles/cmTC_d925c.dir/CheckFunctionExists.c.o -c /home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-vJb09K/CheckFunctionExists.c
+        Linking C executable cmTC_d925c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d925c.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=connect CMakeFiles/cmTC_d925c.dir/CheckFunctionExists.c.o -o cmTC_d925c 
+        make[1]: Leaving directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-vJb09K'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:720 (check_function_exists)"
+      - "dlib/dlib/CMakeLists.txt:398 (include)"
+    checks:
+      - "Looking for remove"
+    directories:
+      source: "/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-zeBBsU"
+      binary: "/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-zeBBsU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_REMOVE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-zeBBsU'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ecdc7/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_ecdc7.dir/build.make CMakeFiles/cmTC_ecdc7.dir/build
+        make[1]: Entering directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-zeBBsU'
+        Building C object CMakeFiles/cmTC_ecdc7.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove -o CMakeFiles/cmTC_ecdc7.dir/CheckFunctionExists.c.o -c /home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-zeBBsU/CheckFunctionExists.c
+        Linking C executable cmTC_ecdc7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecdc7.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=remove CMakeFiles/cmTC_ecdc7.dir/CheckFunctionExists.c.o -o cmTC_ecdc7 
+        make[1]: Leaving directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-zeBBsU'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:729 (check_function_exists)"
+      - "dlib/dlib/CMakeLists.txt:398 (include)"
+    checks:
+      - "Looking for shmat"
+    directories:
+      source: "/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-OwP4p1"
+      binary: "/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-OwP4p1"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_SHMAT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-OwP4p1'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e2229/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_e2229.dir/build.make CMakeFiles/cmTC_e2229.dir/build
+        make[1]: Entering directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-OwP4p1'
+        Building C object CMakeFiles/cmTC_e2229.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat -o CMakeFiles/cmTC_e2229.dir/CheckFunctionExists.c.o -c /home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-OwP4p1/CheckFunctionExists.c
+        Linking C executable cmTC_e2229
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2229.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=shmat CMakeFiles/cmTC_e2229.dir/CheckFunctionExists.c.o -o cmTC_e2229 
+        make[1]: Leaving directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-OwP4p1'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckLibraryExists.cmake:69 (try_compile)"
+      - "/usr/share/cmake/Modules/FindX11.cmake:739 (check_library_exists)"
+      - "dlib/dlib/CMakeLists.txt:398 (include)"
+    checks:
+      - "Looking for IceConnectionNumber in ICE"
+    directories:
+      source: "/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-Pt0pjS"
+      binary: "/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-Pt0pjS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER"
+      cached: true
+      stdout: |
+        Change Dir: '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-Pt0pjS'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_13a98/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_13a98.dir/build.make CMakeFiles/cmTC_13a98.dir/build
+        make[1]: Entering directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-Pt0pjS'
+        Building C object CMakeFiles/cmTC_13a98.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber -o CMakeFiles/cmTC_13a98.dir/CheckFunctionExists.c.o -c /home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-Pt0pjS/CheckFunctionExists.c
+        Linking C executable cmTC_13a98
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13a98.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=IceConnectionNumber CMakeFiles/cmTC_13a98.dir/CheckFunctionExists.c.o -o cmTC_13a98  -lICE 
+        make[1]: Leaving directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-Pt0pjS'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "dlib/dlib/cmake_utils/find_libpng.cmake:25 (try_compile)"
+      - "dlib/dlib/CMakeLists.txt:442 (include)"
+    directories:
+      source: "/home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_libpng"
+      binary: "/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build"
+    buildResult:
+      variable: "test_for_libpng_worked"
+      cached: true
+      stdout: |
+        Change Dir: '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
+        /usr/bin/cmake -S/home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_libpng -B/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build/CMakeFiles /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build//CMakeFiles/progress.marks
+        /usr/bin/make  -f CMakeFiles/Makefile2 all
+        make[1]: Entering directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build'
+        /usr/bin/make  -f CMakeFiles/libpng_test.dir/build.make CMakeFiles/libpng_test.dir/depend
+        make[2]: Entering directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build'
+        cd /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_libpng /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_libpng /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build/CMakeFiles/libpng_test.dir/DependInfo.cmake
+        Dependee "/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build/CMakeFiles/libpng_test.dir/DependInfo.cmake" is newer than depender "/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build/CMakeFiles/libpng_test.dir/depend.internal".
+        Dependee "/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build/CMakeFiles/libpng_test.dir/depend.internal".
+        Scanning dependencies of target libpng_test
+        make[2]: Leaving directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build'
+        /usr/bin/make  -f CMakeFiles/libpng_test.dir/build.make CMakeFiles/libpng_test.dir/build
+        make[2]: Entering directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build'
+        [ 50%] Building CXX object CMakeFiles/libpng_test.dir/libpng_test.cpp.o
+        /usr/bin/c++    -o CMakeFiles/libpng_test.dir/libpng_test.cpp.o -c /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_libpng/libpng_test.cpp
+        [100%] Linking CXX executable libpng_test
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/libpng_test.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/libpng_test.dir/libpng_test.cpp.o -o libpng_test  /usr/lib/libpng.so /usr/lib/libz.so 
+        make[2]: Leaving directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build'
+        [100%] Built target libpng_test
+        make[1]: Leaving directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build'
+        /usr/bin/cmake -E cmake_progress_start /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libpng_build/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "dlib/dlib/cmake_utils/find_libjpeg.cmake:25 (try_compile)"
+      - "dlib/dlib/CMakeLists.txt:504 (include)"
+    directories:
+      source: "/home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_libjpeg"
+      binary: "/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libjpeg_build"
+    buildResult:
+      variable: "test_for_libjpeg_worked"
+      cached: true
+      stdout: |
+        Change Dir: '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libjpeg_build'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
+        /usr/bin/cmake -S/home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_libjpeg -B/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libjpeg_build --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libjpeg_build/CMakeFiles /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libjpeg_build//CMakeFiles/progress.marks
+        /usr/bin/make  -f CMakeFiles/Makefile2 all
+        make[1]: Entering directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libjpeg_build'
+        /usr/bin/make  -f CMakeFiles/libjpeg_test.dir/build.make CMakeFiles/libjpeg_test.dir/depend
+        make[2]: Entering directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libjpeg_build'
+        cd /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libjpeg_build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_libjpeg /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_libjpeg /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libjpeg_build /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libjpeg_build /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libjpeg_build/CMakeFiles/libjpeg_test.dir/DependInfo.cmake
+        Dependee "/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libjpeg_build/CMakeFiles/libjpeg_test.dir/DependInfo.cmake" is newer than depender "/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libjpeg_build/CMakeFiles/libjpeg_test.dir/depend.internal".
+        Dependee "/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libjpeg_build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libjpeg_build/CMakeFiles/libjpeg_test.dir/depend.internal".
+        Scanning dependencies of target libjpeg_test
+        make[2]: Leaving directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libjpeg_build'
+        /usr/bin/make  -f CMakeFiles/libjpeg_test.dir/build.make CMakeFiles/libjpeg_test.dir/build
+        make[2]: Entering directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libjpeg_build'
+        [ 50%] Building CXX object CMakeFiles/libjpeg_test.dir/libjpeg_test.cpp.o
+        /usr/bin/c++    -o CMakeFiles/libjpeg_test.dir/libjpeg_test.cpp.o -c /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_libjpeg/libjpeg_test.cpp
+        [100%] Linking CXX executable libjpeg_test
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/libjpeg_test.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/libjpeg_test.dir/libjpeg_test.cpp.o -o libjpeg_test  /usr/lib/libjpeg.so 
+        make[2]: Leaving directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libjpeg_build'
+        [100%] Built target libjpeg_test
+        make[1]: Leaving directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libjpeg_build'
+        /usr/bin/cmake -E cmake_progress_start /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libjpeg_build/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "dlib/dlib/cmake_utils/find_libwebp.cmake:42 (try_compile)"
+      - "dlib/dlib/CMakeLists.txt:564 (include)"
+    directories:
+      source: "/home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_libwebp"
+      binary: "/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build"
+    buildResult:
+      variable: "test_for_libwebp_worked"
+      cached: true
+      stdout: |
+        Change Dir: '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
+        /usr/bin/cmake -S/home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_libwebp -B/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build/CMakeFiles /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build//CMakeFiles/progress.marks
+        /usr/bin/make  -f CMakeFiles/Makefile2 all
+        make[1]: Entering directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build'
+        /usr/bin/make  -f CMakeFiles/libwebp_test.dir/build.make CMakeFiles/libwebp_test.dir/depend
+        make[2]: Entering directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build'
+        cd /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_libwebp /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_libwebp /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build/CMakeFiles/libwebp_test.dir/DependInfo.cmake
+        Dependee "/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build/CMakeFiles/libwebp_test.dir/DependInfo.cmake" is newer than depender "/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build/CMakeFiles/libwebp_test.dir/depend.internal".
+        Dependee "/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build/CMakeFiles/libwebp_test.dir/depend.internal".
+        Scanning dependencies of target libwebp_test
+        make[2]: Leaving directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build'
+        /usr/bin/make  -f CMakeFiles/libwebp_test.dir/build.make CMakeFiles/libwebp_test.dir/build
+        make[2]: Entering directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build'
+        [ 50%] Building CXX object CMakeFiles/libwebp_test.dir/libwebp_test.cpp.o
+        /usr/bin/c++    -o CMakeFiles/libwebp_test.dir/libwebp_test.cpp.o -c /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_libwebp/libwebp_test.cpp
+        [100%] Linking CXX executable libwebp_test
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/libwebp_test.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/libwebp_test.dir/libwebp_test.cpp.o -o libwebp_test 
+        make[2]: Leaving directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build'
+        [100%] Built target libwebp_test
+        make[1]: Leaving directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build'
+        /usr/bin/cmake -E cmake_progress_start /home/info/FaceDetectionSerial/build/dlib_build/dlib/test_for_libwebp_build/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "dlib/dlib/cmake_utils/find_blas.cmake:73 (CHECK_FUNCTION_EXISTS)"
+      - "dlib/dlib/CMakeLists.txt:588 (include)"
+    checks:
+      - "Looking for cblas_ddot"
+    directories:
+      source: "/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-iJN2XO"
+      binary: "/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-iJN2XO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "PKGCFG_HAVE_CBLAS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-iJN2XO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_578ee/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_578ee.dir/build.make CMakeFiles/cmTC_578ee.dir/build
+        make[1]: Entering directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-iJN2XO'
+        Building C object CMakeFiles/cmTC_578ee.dir/CheckFunctionExists.c.o
+        /usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cblas_ddot -o CMakeFiles/cmTC_578ee.dir/CheckFunctionExists.c.o -c /home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-iJN2XO/CheckFunctionExists.c
+        Linking C executable cmTC_578ee
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_578ee.dir/link.txt --verbose=1
+        /usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cblas_ddot CMakeFiles/cmTC_578ee.dir/CheckFunctionExists.c.o -o cmTC_578ee  -L/usr/lib -lcblas 
+        make[1]: Leaving directory '/home/info/FaceDetectionSerial/build/CMakeFiles/CMakeScratch/TryCompile-iJN2XO'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "dlib/dlib/CMakeLists.txt:704 (try_compile)"
+    directories:
+      source: "/home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda"
+      binary: "/home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build"
+    buildResult:
+      variable: "cuda_test_compile_worked"
+      cached: true
+      stdout: |
+        Change Dir: '/home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
+        /usr/bin/cmake -S/home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda -B/home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build --check-build-system CMakeFiles/Makefile.cmake 0
+        /usr/bin/cmake -E cmake_progress_start /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build//CMakeFiles/progress.marks
+        /usr/bin/make  -f CMakeFiles/Makefile2 all
+        make[1]: Entering directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build'
+        /usr/bin/make  -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/depend
+        make[2]: Entering directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build'
+        [ 50%] Building NVCC (Device) object CMakeFiles/cuda_test.dir/cuda_test_generated_cuda_test.cu.o
+        cd /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir && /usr/bin/cmake -E make_directory /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//.
+        cd /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir && /usr/bin/cmake -D verbose:BOOL=1 -D build_configuration:STRING= -D generated_file:STRING=/home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//./cuda_test_generated_cuda_test.cu.o -D generated_cubin_file:STRING=/home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//./cuda_test_generated_cuda_test.cu.o.cubin.txt -P /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.cmake
+        -- Removing /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//./cuda_test_generated_cuda_test.cu.o
+        /usr/bin/cmake -E rm -f /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//./cuda_test_generated_cuda_test.cu.o
+        -- Generating dependency file: /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.NVCC-depend
+        /opt/cuda/bin/nvcc -M -D__CUDACC__ /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/cuda_test.cu -o /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.NVCC-depend -ccbin /usr/bin/cc -m64 -DDLIB_USE_CUDA -arch=sm_50 -std=c++14 -D__STRICT_ANSI__ -D_MWAITXINTRIN_H_INCLUDED -D_FORCE_INLINES -DNVCC -I/opt/cuda/include -I/home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda
+        nvcc warning : incompatible redefinition for option 'compiler-bindir', the last value of this option was used
+        -- Generating temporary cmake readable file: /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.depend.tmp
+        /usr/bin/cmake -D input_file:FILEPATH=/home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.NVCC-depend -D output_file:FILEPATH=/home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.depend.tmp -D verbose=1 -P /usr/share/cmake/Modules/FindCUDA/make2cmake.cmake
+        -- Copy if different /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.depend.tmp to /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.depend
+        /usr/bin/cmake -E copy_if_different /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.depend.tmp /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.depend
+        -- Removing /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.depend.tmp and /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.NVCC-depend
+        /usr/bin/cmake -E rm -f /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.depend.tmp /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//cuda_test_generated_cuda_test.cu.o.NVCC-depend
+        -- Generating /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//./cuda_test_generated_cuda_test.cu.o
+        /opt/cuda/bin/nvcc /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/cuda_test.cu -c -o /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//./cuda_test_generated_cuda_test.cu.o -ccbin /usr/bin/cc -m64 -DDLIB_USE_CUDA -arch=sm_50 -std=c++14 -D__STRICT_ANSI__ -D_MWAITXINTRIN_H_INCLUDED -D_FORCE_INLINES -DNVCC -I/opt/cuda/include -I/home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda
+        nvcc warning : incompatible redefinition for option 'compiler-bindir', the last value of this option was used
+        /usr/include/c++/13.2.1/future: In constructor ‘std::future<void>::future(std::future<void>&&)’:
+        /usr/include/c++/13.2.1/future:896:73: error: use of deleted function ‘std::__basic_future<_Res>::__basic_future(const std::__basic_future<_Res>&) [with _Res = void]’
+          896 |       future(future&& __uf) noexcept : _Base_type(std::move(__uf)) { }
+              |                                                                         ^
+        /usr/include/c++/13.2.1/future:706:9: note: declared here
+          706 |       __basic_future(const __basic_future&) = delete;
+              |         ^~~~~~~~~~~~~~
+        /usr/include/c++/13.2.1/future: In member function ‘std::future<void>& std::future<void>::operator=(std::future<void>&&)’:
+        /usr/include/c++/13.2.1/future:904:40: error: use of deleted function ‘std::future<void>::future(const std::future<void>&)’
+          904 |         future(std::move(__fut))._M_swap(*this);
+              |                                        ^
+        /usr/include/c++/13.2.1/future:899:1: note: declared here
+          899 |       future(const future&) = delete;
+              | ^     
+        /usr/include/c++/13.2.1/future: In constructor ‘std::shared_future<void>::shared_future(std::future<void>&&)’:
+        /usr/include/c++/13.2.1/future:1018:75: error: use of deleted function ‘std::__basic_future<_Res>::__basic_future(const std::__basic_future<_Res>&) [with _Res = void]’
+         1018 |       shared_future(future<void>&& __uf) noexcept
+              |                                                                           ^
+        /usr/include/c++/13.2.1/future:706:9: note: declared here
+          706 |       __basic_future(const __basic_future&) = delete;
+              |         ^~~~~~~~~~~~~~
+        /usr/include/c++/13.2.1/future: In member function ‘std::shared_future<void> std::future<void>::share()’:
+        /usr/include/c++/13.2.1/future:1077:44: error: cannot bind rvalue reference of type ‘std::future<void>&&’ to lvalue of type ‘std::future<void>’
+         1077 |   { return shared_future<void>(std::move(*this)); }
+              |                                  ~~~~~~~~~~^~~~~~~~
+        /usr/include/c++/13.2.1/future:1018:32: note:   initializing argument 1 of ‘std::shared_future<void>::shared_future(std::future<void>&&)’
+         1018 |       shared_future(future<void>&& __uf) noexcept
+              |               ~~~~~~~~~~~~~~~~~^~~~
+        /usr/include/c++/13.2.1/future: In constructor ‘std::promise<void>::promise(std::promise<void>&&)’:
+        /usr/include/c++/13.2.1/future:1322:89: error: use of deleted function ‘std::unique_ptr<_Tp, _Dp>::unique_ptr(const std::unique_ptr<_Tp, _Dp>&) [with _Tp = std::__future_base::_Result<void>; _Dp = std::__future_base::_Result_base::_Deleter]’
+         1322 |       promise(promise&& __rhs) noexcept
+              |                                                                                         ^                                      
+        /usr/include/c++/13.2.1/bits/unique_ptr.h:522:1: note: declared here
+          522 |       unique_ptr(const unique_ptr&) = delete;
+              | ^     ~~~~
+        /usr/include/c++/13.2.1/future: In destructor ‘std::promise<void>::~promise()’:
+        /usr/include/c++/13.2.1/future:1346:40: error: cannot convert ‘unique_ptr<std::__future_base::_Result<void>,[...]>’ to ‘unique_ptr<std::__future_base::_Result_base,[...]>’
+         1346 |           _M_future->_M_break_promise(std::move(_M_storage));
+              |                               ~~~~~~~~~^~~~~~~~~~~~
+              |                                        |
+              |                                        unique_ptr<std::__future_base::_Result<void>,[...]>
+        /usr/include/c++/13.2.1/future:460:33: note:   initializing argument 1 of ‘void std::__future_base::_State_baseV2::_M_break_promise(_Ptr_type)’
+          460 |       _M_break_promise(_Ptr_type __res)
+              |                       ~~~~~~~~~~^~~~~
+        /usr/include/c++/13.2.1/future: In member function ‘std::promise<void>& std::promise<void>::operator=(std::promise<void>&&)’:
+        /usr/include/c++/13.2.1/future:1353:41: error: use of deleted function ‘std::promise<void>::promise(const std::promise<void>&)’
+         1353 |         promise(std::move(__rhs)).swap(*this);
+              |                                         ^
+        /usr/include/c++/13.2.1/future:1341:1: note: declared here
+         1341 |       promise(const promise&) = delete;
+              | ^     ~
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../dnn/../geometry/line.h: In function ‘dlib::dpoint dlib::intersect(const line&, const line&)’:
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../dnn/../geometry/line.h:127:17: error: no matching function for call to ‘intersect(std::pair<const dlib::vector<double, 2>, const dlib::vector<double, 2> >, std::pair<const dlib::vector<double, 2>, const dlib::vector<double, 2> >)’
+          127 |         return intersect(std::make_pair(a.p1(),a.p2()), std::make_pair(b.p1(), b.p2()));
+              |         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../dnn/../geometry/line.h:92:1: note: candidate: ‘template<class T> dlib::dpoint dlib::intersect(const std::pair<vector<T, 2>, vector<T, 2> >&, const std::pair<vector<T, 2>, vector<T, 2> >&)’
+           92 |     inline dpoint intersect(
+              | ^   ~~~~~
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../dnn/../geometry/line.h:92:1: note:   template argument deduction/substitution failed:
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../dnn/../geometry/line.h:127:17: note:   types ‘dlib::vector<T, 2>’ and ‘const dlib::vector<double, 2>’ have incompatible cv-qualifiers
+          127 |         return intersect(std::make_pair(a.p1(),a.p2()), std::make_pair(b.p1(), b.p2()));
+              |         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../matrix/../array2d/../geometry/rectangle.h:380:18: note: candidate: ‘dlib::rectangle dlib::intersect(const rectangle&, const rectangle&)’
+          380 |     inline rectangle intersect (
+              |                  ^~~~~~~~~
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../matrix/../array2d/../geometry/rectangle.h:381:1: note:   no known conversion for argument 1 from ‘std::pair<const dlib::vector<double, 2>, const dlib::vector<double, 2> >’ to ‘const dlib::rectangle&’
+          380 |     inline rectangle intersect (
+              |                            ~~~~~
+          381 |         const rectangle& a,
+              | ^
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../dnn/../geometry/drectangle.h:380:19: note: candidate: ‘dlib::drectangle dlib::intersect(const drectangle&, const drectangle&)’
+          380 |     inline drectangle intersect (
+              |                   ^~~~~~~~~
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../dnn/../geometry/drectangle.h:381:1: note:   no known conversion for argument 1 from ‘std::pair<const dlib::vector<double, 2>, const dlib::vector<double, 2> >’ to ‘const dlib::drectangle&’
+          380 |     inline drectangle intersect (
+              |                             ~~~~~
+          381 |         const drectangle& a,
+              | ^
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../dnn/../geometry/line.h:122:15: note: candidate: ‘dlib::dpoint dlib::intersect(const line&, const line&)’
+          122 |     inline dpoint intersect(
+              |               ^~~~~~~~~
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../dnn/../geometry/line.h:123:1: note:   no known conversion for argument 1 from ‘std::pair<const dlib::vector<double, 2>, const dlib::vector<double, 2> >’ to ‘const dlib::line&’
+          122 |     inline dpoint intersect(
+              |                         ~~~~
+          123 |         const line& a,
+              | ^
+        /usr/include/c++/13.2.1/bits/stl_pair.h: In instantiation of ‘constexpr std::pair<typename std::__strip_reference_wrapper<typename std::decay<_Tp>::type>::__type, typename std::__strip_reference_wrapper<typename std::decay<_Tp2>::type>::__type> std::make_pair(_T1&&, _T2&&) [with _T1 = long long unsigned int&; _T2 = long long unsigned int&; typename __strip_reference_wrapper<typename decay<_Tp>::type>::__type = long long unsigned int; typename decay<_Tp>::type = long long unsigned int; typename __strip_reference_wrapper<typename decay<_Tp2>::type>::__type = long long unsigned int; typename decay<_Tp2>::type = long long unsigned int]’:
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../matrix/../general_hash/murmur_hash3.h:430:22:   required from here
+        /usr/include/c++/13.2.1/bits/stl_pair.h:927:39: error: call of overloaded ‘forward<long long unsigned int&>(long long unsigned int&)’ is ambiguous
+          927 |       return __pair_type(std::forward<_T1>(__x), std::forward<_T2>(__y));
+              |                    ~~~~~~~~~~~~~~~~~~~^~~~~
+        /usr/include/c++/13.2.1/bits/move.h:70:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&) [with _Tp = long long unsigned int&; typename remove_reference<_Functor>::type = long long unsigned int&]’
+           70 |     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/move.h:82:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&&) [with _Tp = long long unsigned int&; typename remove_reference<_Functor>::type = long long unsigned int&]’
+           82 |     forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/stl_vector.h: In instantiation of ‘std::_Vector_base<_Tp, _Alloc>::_Vector_impl::_Vector_impl(std::_Vector_base<_Tp, _Alloc>::_Vector_impl&&) [with _Tp = dlib::rectangle; _Alloc = std::allocator<dlib::rectangle>]’:
+        /usr/include/c++/13.2.1/bits/stl_vector.h:335:1:   required from here
+        /usr/include/c++/13.2.1/bits/stl_vector.h:151:174: error: use of deleted function ‘constexpr std::_Vector_base<dlib::rectangle, std::allocator<dlib::rectangle> >::_Vector_impl_data::_Vector_impl_data(const std::_Vector_base<dlib::rectangle, std::allocator<dlib::rectangle> >::_Vector_impl_data&)’
+          151 |         _Vector_impl(_Vector_impl&& __x) noexcept
+              |                                                                                                                                                                              ^
+        /usr/include/c++/13.2.1/bits/stl_vector.h:92:8: note: ‘constexpr std::_Vector_base<dlib::rectangle, std::allocator<dlib::rectangle> >::_Vector_impl_data::_Vector_impl_data(const std::_Vector_base<dlib::rectangle, std::allocator<dlib::rectangle> >::_Vector_impl_data&)’ is implicitly declared as deleted because ‘std::_Vector_base<dlib::rectangle, std::allocator<dlib::rectangle> >::_Vector_impl_data’ declares a move constructor or move assignment operator
+           92 |       struct _Vector_impl_data
+              |        ^~~~~~~~~~~~~~~~~
+        /usr/include/c++/13.2.1/bits/move.h: In instantiation of ‘std::_Require<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> > std::swap(_Tp&, _Tp&) [with _Tp = dlib::gpu_data; _Require<__not_<__is_tuple_like<_Tp> >, is_move_constructible<_Tp>, is_move_assignable<_Tp> > = void]’:
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/tensor.h:420:10:   required from here
+        /usr/include/c++/13.2.1/bits/move.h:197:5: error: use of deleted function ‘dlib::gpu_data::gpu_data(const dlib::gpu_data&)’
+          197 |       _Tp __tmp = _GLIBCXX_MOVE(__a);
+              |     ^ ~~~
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/gpu_data.h:48:1: note: declared here
+           48 |         gpu_data(const gpu_data&) = delete;
+              | ^       
+        /usr/include/c++/13.2.1/bits/move.h:198:5: error: use of deleted function ‘dlib::gpu_data& dlib::gpu_data::operator=(const dlib::gpu_data&)’
+          198 |       __a = _GLIBCXX_MOVE(__b);
+              |     ^ ~~~~~~~~~~~~~~
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/gpu_data.h:49:11: note: declared here
+           49 |         gpu_data& operator=(const gpu_data&) = delete;
+              |           ^~~~~~~~
+        /usr/include/c++/13.2.1/bits/move.h:199:5: error: use of deleted function ‘dlib::gpu_data& dlib::gpu_data::operator=(const dlib::gpu_data&)’
+          199 |       __b = _GLIBCXX_MOVE(__tmp);
+              |     ^ ~~~~~~~~~~~~~~~~
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/gpu_data.h:49:11: note: declared here
+           49 |         gpu_data& operator=(const gpu_data&) = delete;
+              |           ^~~~~~~~
+        /usr/include/c++/13.2.1/bits/move.h: In instantiation of ‘std::_Require<std::__not_<std::__is_tuple_like<_Tp> >, std::is_move_constructible<_Tp>, std::is_move_assignable<_Tp> > std::swap(_Tp&, _Tp&) [with _Tp = dlib::cuda::tensor_descriptor; _Require<__not_<__is_tuple_like<_Tp> >, is_move_constructible<_Tp>, is_move_assignable<_Tp> > = void]’:
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/tensor.h:423:10:   required from here
+        /usr/include/c++/13.2.1/bits/move.h:197:5: error: use of deleted function ‘dlib::cuda::tensor_descriptor::tensor_descriptor(const dlib::cuda::tensor_descriptor&)’
+          197 |       _Tp __tmp = _GLIBCXX_MOVE(__a);
+              |     ^ ~~~
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/cudnn_dlibapi.h:31:9: note: declared here
+           31 |             tensor_descriptor(const tensor_descriptor&) = delete;
+              |         ^   ~~~~~~~~~~~~~
+        /usr/include/c++/13.2.1/bits/move.h:198:5: error: use of deleted function ‘dlib::cuda::tensor_descriptor& dlib::cuda::tensor_descriptor::operator=(const dlib::cuda::tensor_descriptor&)’
+          198 |       __a = _GLIBCXX_MOVE(__b);
+              |     ^ ~~~~~~~~~~~~~~
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/cudnn_dlibapi.h:32:20: note: declared here
+           32 |             tensor_descriptor& operator=(const tensor_descriptor&) = delete;
+              |                    ^~~~~~~~
+        /usr/include/c++/13.2.1/bits/move.h:199:5: error: use of deleted function ‘dlib::cuda::tensor_descriptor& dlib::cuda::tensor_descriptor::operator=(const dlib::cuda::tensor_descriptor&)’
+          199 |       __b = _GLIBCXX_MOVE(__tmp);
+              |     ^ ~~~~~~~~~~~~~~~~
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/cudnn_dlibapi.h:32:20: note: declared here
+           32 |             tensor_descriptor& operator=(const tensor_descriptor&) = delete;
+              |                    ^~~~~~~~
+        /usr/include/c++/13.2.1/bits/stl_pair.h: In instantiation of ‘constexpr std::pair<typename std::__strip_reference_wrapper<typename std::decay<_Tp>::type>::__type, typename std::__strip_reference_wrapper<typename std::decay<_Tp2>::type>::__type> std::make_pair(_T1&&, _T2&&) [with _T1 = const dlib::vector<double, 2>&; _T2 = const dlib::vector<double, 2>&; typename __strip_reference_wrapper<typename decay<_Tp>::type>::__type = const dlib::vector<double, 2>; typename decay<_Tp>::type = const dlib::vector<double, 2>; typename __strip_reference_wrapper<typename decay<_Tp2>::type>::__type = const dlib::vector<double, 2>; typename decay<_Tp2>::type = const dlib::vector<double, 2>]’:
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../dnn/../geometry/line.h:127:32:   required from here
+        /usr/include/c++/13.2.1/bits/stl_pair.h:927:39: error: call of overloaded ‘forward<const dlib::vector<double, 2>&>(const dlib::vector<double, 2>&)’ is ambiguous
+          927 |       return __pair_type(std::forward<_T1>(__x), std::forward<_T2>(__y));
+              |                    ~~~~~~~~~~~~~~~~~~~^~~~~
+        /usr/include/c++/13.2.1/bits/move.h:70:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&) [with _Tp = const dlib::vector<double, 2>&; typename remove_reference<_Functor>::type = const dlib::vector<double, 2>&]’
+           70 |     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/move.h:82:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&&) [with _Tp = const dlib::vector<double, 2>&; typename remove_reference<_Functor>::type = const dlib::vector<double, 2>&]’
+           82 |     forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/stl_vector.h: In instantiation of ‘std::_Vector_base<_Tp, _Alloc>::_Vector_impl::_Vector_impl(std::_Vector_base<_Tp, _Alloc>::_Vector_impl&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]’:
+        /usr/include/c++/13.2.1/bits/stl_vector.h:335:1:   required from ‘const std::vector<std::__cxx11::basic_string<_CharT, _Traits, _Alloc> > dlib::split(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const charT*) [with charT = char; traits = std::char_traits<char>; alloc = std::allocator<char>]’
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../matrix/../svm/../graph_utils/../string/string.h:996:13:   required from here
+        /usr/include/c++/13.2.1/bits/stl_vector.h:151:174: error: use of deleted function ‘constexpr std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > >::_Vector_impl_data::_Vector_impl_data(const std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > >::_Vector_impl_data&)’
+          151 |         _Vector_impl(_Vector_impl&& __x) noexcept
+              |                                                                                                                                                                              ^
+        /usr/include/c++/13.2.1/bits/stl_vector.h:92:8: note: ‘constexpr std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > >::_Vector_impl_data::_Vector_impl_data(const std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > >::_Vector_impl_data&)’ is implicitly declared as deleted because ‘std::_Vector_base<std::__cxx11::basic_string<char>, std::allocator<std::__cxx11::basic_string<char> > >::_Vector_impl_data’ declares a move constructor or move assignment operator
+           92 |       struct _Vector_impl_data
+              |        ^~~~~~~~~~~~~~~~~
+        /usr/include/c++/13.2.1/bits/alloc_traits.h: In instantiation of ‘static void std::allocator_traits<std::allocator<_CharT> >::construct(allocator_type&, _Up*, _Args&& ...) [with _Up = std::__cxx11::basic_string<char>; _Args = {const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&}; _Tp = std::__cxx11::basic_string<char>; allocator_type = std::allocator<std::__cxx11::basic_string<char> >]’:
+        /usr/include/c++/13.2.1/bits/stl_vector.h:1283:25:   required from ‘void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; value_type = std::__cxx11::basic_string<char>]’
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../matrix/../svm/../graph_utils/../string/string.h:962:14:   required from ‘const std::vector<std::__cxx11::basic_string<_CharT, _Traits, _Alloc> > dlib::split(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const charT*) [with charT = char; traits = std::char_traits<char>; alloc = std::allocator<char>]’
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../matrix/../svm/../graph_utils/../string/string.h:996:13:   required from here
+        /usr/include/c++/13.2.1/bits/alloc_traits.h:537:48: error: call of overloaded ‘forward<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(const std::__cxx11::basic_string<char>&)’ is ambiguous
+          537 |           __a.construct(__p, std::forward<_Args>(__args)...);
+              |                           ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+        /usr/include/c++/13.2.1/bits/move.h:70:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&) [with _Tp = const __cxx11::basic_string<char>&; typename remove_reference<_Functor>::type = const __cxx11::basic_string<char>&]’
+           70 |     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/move.h:82:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&&) [with _Tp = const __cxx11::basic_string<char>&; typename remove_reference<_Functor>::type = const __cxx11::basic_string<char>&]’
+           82 |     forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/vector.tcc: In instantiation of ‘void std::vector<_Tp, _Alloc>::_M_realloc_insert(iterator, _Args&& ...) [with _Args = {const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&}; _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; iterator = std::vector<std::__cxx11::basic_string<char> >::iterator]’:
+        /usr/include/c++/13.2.1/bits/stl_vector.h:1289:18:   required from ‘void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; value_type = std::__cxx11::basic_string<char>]’
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../matrix/../svm/../graph_utils/../string/string.h:962:14:   required from ‘const std::vector<std::__cxx11::basic_string<_CharT, _Traits, _Alloc> > dlib::split(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const charT*) [with charT = char; traits = std::char_traits<char>; alloc = std::allocator<char>]’
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../matrix/../svm/../graph_utils/../string/string.h:996:13:   required from here
+        /usr/include/c++/13.2.1/bits/vector.tcc:468:101: error: call of overloaded ‘forward<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(const std::__cxx11::basic_string<char>&)’ is ambiguous
+          468 |           _Alloc_traits::construct(this->_M_impl,
+              |                                                                                                     ^       
+        /usr/include/c++/13.2.1/bits/move.h:70:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&) [with _Tp = const __cxx11::basic_string<char>&; typename remove_reference<_Functor>::type = const __cxx11::basic_string<char>&]’
+           70 |     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/move.h:82:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&&) [with _Tp = const __cxx11::basic_string<char>&; typename remove_reference<_Functor>::type = const __cxx11::basic_string<char>&]’
+           82 |     forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/invoke.h: In instantiation of ‘constexpr std::__enable_if_t<(! std::is_void< <template-parameter-1-1> >::value), _Res> std::__invoke_r(_Callable&&, _Args&& ...) [with _Res = unique_ptr<__future_base::_Result_base, __future_base::_Result_base::_Deleter>; _Callable = __future_base::_State_baseV2::_Setter<void, void>&; _Args = {}; __enable_if_t<(! is_void< <template-parameter-1-1> >::value), _Res> = unique_ptr<__future_base::_Result_base, __future_base::_Result_base::_Deleter>]’:
+        /usr/include/c++/13.2.1/bits/std_function.h:290:31:   required from ‘static _Res std::_Function_handler<_Res(_ArgTypes ...), _Functor>::_M_invoke(const std::_Any_data&, _ArgTypes&& ...) [with _Res = std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter>; _Functor = std::__future_base::_State_baseV2::_Setter<void, void>; _ArgTypes = {}]’
+        /usr/include/c++/13.2.1/bits/std_function.h:451:17:   required from ‘std::function<_Res(_ArgTypes ...)>::function(_Functor&&) [with _Functor = std::__future_base::_State_baseV2::_Setter<void, void>; _Constraints = void; _Res = std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter>; _ArgTypes = {}]’
+        /usr/include/c++/13.2.1/future:1374:33:   required from here
+        /usr/include/c++/13.2.1/bits/invoke.h:138:118: error: call of overloaded ‘forward<std::__future_base::_State_baseV2::_Setter<void, void>&>(std::__future_base::_State_baseV2::_Setter<void, void>&)’ is ambiguous
+          138 |       return std::__invoke_impl<__type>(__tag{}, std::forward<_Callable>(__fn),
+              |                                                                                                                      ^     
+        /usr/include/c++/13.2.1/bits/move.h:70:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&) [with _Tp = __future_base::_State_baseV2::_Setter<void, void>&; typename remove_reference<_Functor>::type = __future_base::_State_baseV2::_Setter<void, void>&]’
+           70 |     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/move.h:82:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&&) [with _Tp = __future_base::_State_baseV2::_Setter<void, void>&; typename remove_reference<_Functor>::type = __future_base::_State_baseV2::_Setter<void, void>&]’
+           82 |     forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/invoke.h: In instantiation of ‘constexpr std::__enable_if_t<(! std::is_void< <template-parameter-1-1> >::value), _Res> std::__invoke_r(_Callable&&, _Args&& ...) [with _Res = unique_ptr<__future_base::_Result_base, __future_base::_Result_base::_Deleter>; _Callable = __future_base::_State_baseV2::_Setter<void, __future_base::_State_baseV2::__exception_ptr_tag>&; _Args = {}; __enable_if_t<(! is_void< <template-parameter-1-1> >::value), _Res> = unique_ptr<__future_base::_Result_base, __future_base::_Result_base::_Deleter>]’:
+        /usr/include/c++/13.2.1/bits/std_function.h:290:31:   required from ‘static _Res std::_Function_handler<_Res(_ArgTypes ...), _Functor>::_M_invoke(const std::_Any_data&, _ArgTypes&& ...) [with _Res = std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter>; _Functor = std::__future_base::_State_baseV2::_Setter<void, std::__future_base::_State_baseV2::__exception_ptr_tag>; _ArgTypes = {}]’
+        /usr/include/c++/13.2.1/bits/std_function.h:451:17:   required from ‘std::function<_Res(_ArgTypes ...)>::function(_Functor&&) [with _Functor = std::__future_base::_State_baseV2::_Setter<void, std::__future_base::_State_baseV2::__exception_ptr_tag>; _Constraints = void; _Res = std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter>; _ArgTypes = {}]’
+        /usr/include/c++/13.2.1/future:1378:33:   required from here
+        /usr/include/c++/13.2.1/bits/invoke.h:138:118: error: call of overloaded ‘forward<std::__future_base::_State_baseV2::_Setter<void, std::__future_base::_State_baseV2::__exception_ptr_tag>&>(std::__future_base::_State_baseV2::_Setter<void, std::__future_base::_State_baseV2::__exception_ptr_tag>&)’ is ambiguous
+          138 |       return std::__invoke_impl<__type>(__tag{}, std::forward<_Callable>(__fn),
+              |                                                                                                                      ^     
+        /usr/include/c++/13.2.1/bits/move.h:70:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&) [with _Tp = __future_base::_State_baseV2::_Setter<void, __future_base::_State_baseV2::__exception_ptr_tag>&; typename remove_reference<_Functor>::type = __future_base::_State_baseV2::_Setter<void, __future_base::_State_baseV2::__exception_ptr_tag>&]’
+           70 |     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/move.h:82:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&&) [with _Tp = __future_base::_State_baseV2::_Setter<void, __future_base::_State_baseV2::__exception_ptr_tag>&; typename remove_reference<_Functor>::type = __future_base::_State_baseV2::_Setter<void, __future_base::_State_baseV2::__exception_ptr_tag>&]’
+           82 |     forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/std_function.h: In instantiation of ‘static void std::_Function_base::_Base_manager<_Functor>::_M_init_functor(std::_Any_data&, _Fn&&) [with _Fn = const std::__future_base::_State_baseV2::_Setter<void, void>&; _Functor = std::__future_base::_State_baseV2::_Setter<void, void>]’:
+        /usr/include/c++/13.2.1/bits/std_function.h:198:16:   required from ‘static bool std::_Function_base::_Base_manager<_Functor>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation) [with _Functor = std::__future_base::_State_baseV2::_Setter<void, void>]’
+        /usr/include/c++/13.2.1/bits/std_function.h:282:18:   required from ‘static bool std::_Function_handler<_Res(_ArgTypes ...), _Functor>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation) [with _Res = std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter>; _Functor = std::__future_base::_State_baseV2::_Setter<void, void>; _ArgTypes = {}]’
+        /usr/include/c++/13.2.1/bits/std_function.h:452:17:   required from ‘std::function<_Res(_ArgTypes ...)>::function(_Functor&&) [with _Functor = std::__future_base::_State_baseV2::_Setter<void, void>; _Constraints = void; _Res = std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter>; _ArgTypes = {}]’
+        /usr/include/c++/13.2.1/future:1374:33:   required from here
+        /usr/include/c++/13.2.1/bits/std_function.h:215:48: error: call of overloaded ‘forward<const std::__future_base::_State_baseV2::_Setter<void, void>&>(const std::__future_base::_State_baseV2::_Setter<void, void>&)’ is ambiguous
+          215 |             _M_create(__functor, std::forward<_Fn>(__f), _Local_storage());
+              |                             ~~~~~~~~~~~~~~~~~~~^~~~~
+        /usr/include/c++/13.2.1/bits/move.h:70:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&) [with _Tp = const __future_base::_State_baseV2::_Setter<void, void>&; typename remove_reference<_Functor>::type = const __future_base::_State_baseV2::_Setter<void, void>&]’
+           70 |     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/move.h:82:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&&) [with _Tp = const __future_base::_State_baseV2::_Setter<void, void>&; typename remove_reference<_Functor>::type = const __future_base::_State_baseV2::_Setter<void, void>&]’
+           82 |     forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/std_function.h: In instantiation of ‘static void std::_Function_base::_Base_manager<_Functor>::_M_init_functor(std::_Any_data&, _Fn&&) [with _Fn = const std::__future_base::_State_baseV2::_Setter<void, std::__future_base::_State_baseV2::__exception_ptr_tag>&; _Functor = std::__future_base::_State_baseV2::_Setter<void, std::__future_base::_State_baseV2::__exception_ptr_tag>]’:
+        /usr/include/c++/13.2.1/bits/std_function.h:198:16:   required from ‘static bool std::_Function_base::_Base_manager<_Functor>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation) [with _Functor = std::__future_base::_State_baseV2::_Setter<void, std::__future_base::_State_baseV2::__exception_ptr_tag>]’
+        /usr/include/c++/13.2.1/bits/std_function.h:282:18:   required from ‘static bool std::_Function_handler<_Res(_ArgTypes ...), _Functor>::_M_manager(std::_Any_data&, const std::_Any_data&, std::_Manager_operation) [with _Res = std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter>; _Functor = std::__future_base::_State_baseV2::_Setter<void, std::__future_base::_State_baseV2::__exception_ptr_tag>; _ArgTypes = {}]’
+        /usr/include/c++/13.2.1/bits/std_function.h:452:17:   required from ‘std::function<_Res(_ArgTypes ...)>::function(_Functor&&) [with _Functor = std::__future_base::_State_baseV2::_Setter<void, std::__future_base::_State_baseV2::__exception_ptr_tag>; _Constraints = void; _Res = std::unique_ptr<std::__future_base::_Result_base, std::__future_base::_Result_base::_Deleter>; _ArgTypes = {}]’
+        /usr/include/c++/13.2.1/future:1378:33:   required from here
+        /usr/include/c++/13.2.1/bits/std_function.h:215:48: error: call of overloaded ‘forward<const std::__future_base::_State_baseV2::_Setter<void, std::__future_base::_State_baseV2::__exception_ptr_tag>&>(const std::__future_base::_State_baseV2::_Setter<void, std::__future_base::_State_baseV2::__exception_ptr_tag>&)’ is ambiguous
+          215 |             _M_create(__functor, std::forward<_Fn>(__f), _Local_storage());
+              |                             ~~~~~~~~~~~~~~~~~~~^~~~~
+        /usr/include/c++/13.2.1/bits/move.h:70:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&) [with _Tp = const __future_base::_State_baseV2::_Setter<void, __future_base::_State_baseV2::__exception_ptr_tag>&; typename remove_reference<_Functor>::type = const __future_base::_State_baseV2::_Setter<void, __future_base::_State_baseV2::__exception_ptr_tag>&]’
+           70 |     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/move.h:82:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&&) [with _Tp = const __future_base::_State_baseV2::_Setter<void, __future_base::_State_baseV2::__exception_ptr_tag>&; typename remove_reference<_Functor>::type = const __future_base::_State_baseV2::_Setter<void, __future_base::_State_baseV2::__exception_ptr_tag>&]’
+           82 |     forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/stl_construct.h: In instantiation of ‘void std::_Construct(_Tp*, _Args&& ...) [with _Tp = __cxx11::basic_string<char>; _Args = {const __cxx11::basic_string<char, char_traits<char>, allocator<char> >&}]’:
+        /usr/include/c++/13.2.1/bits/stl_uninitialized.h:120:16:   required from ‘_ForwardIterator std::__do_uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = __gnu_cxx::__normal_iterator<const __cxx11::basic_string<char>*, vector<__cxx11::basic_string<char> > >; _ForwardIterator = __cxx11::basic_string<char>*]’
+        /usr/include/c++/13.2.1/bits/stl_uninitialized.h:137:31:   required from ‘static _ForwardIterator std::__uninitialized_copy<_TrivialValueTypes>::__uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = __gnu_cxx::__normal_iterator<const std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >; _ForwardIterator = std::__cxx11::basic_string<char>*; bool _TrivialValueTypes = false]’
+        /usr/include/c++/13.2.1/bits/stl_uninitialized.h:184:90:   required from ‘_ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = __gnu_cxx::__normal_iterator<const __cxx11::basic_string<char>*, vector<__cxx11::basic_string<char> > >; _ForwardIterator = __cxx11::basic_string<char>*]’
+        /usr/include/c++/13.2.1/bits/stl_uninitialized.h:373:31:   required from ‘_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, allocator<_Tp>&) [with _InputIterator = __gnu_cxx::__normal_iterator<const __cxx11::basic_string<char>*, vector<__cxx11::basic_string<char> > >; _ForwardIterator = __cxx11::basic_string<char>*; _Tp = __cxx11::basic_string<char>]’
+        /usr/include/c++/13.2.1/bits/stl_vector.h:602:58:   required from ‘std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]’
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../matrix/../svm/../graph_utils/../string/string.h:996:13:   required from here
+        /usr/include/c++/13.2.1/bits/stl_construct.h:119:46: error: call of overloaded ‘forward<const std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&>(const std::__cxx11::basic_string<char>&)’ is ambiguous
+          119 |       ::new((void*)__p) _Tp(std::forward<_Args>(__args)...);
+              |                         ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+        /usr/include/c++/13.2.1/bits/move.h:70:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&) [with _Tp = const __cxx11::basic_string<char>&; typename remove_reference<_Functor>::type = const __cxx11::basic_string<char>&]’
+           70 |     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/move.h:82:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&&) [with _Tp = const __cxx11::basic_string<char>&; typename remove_reference<_Functor>::type = const __cxx11::basic_string<char>&]’
+           82 |     forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/stl_construct.h: In instantiation of ‘void std::_Construct(_Tp*, _Args&& ...) [with _Tp = dlib::vector<long int, 2>; _Args = {const dlib::vector<long int, 2>&}]’:
+        /usr/include/c++/13.2.1/bits/stl_uninitialized.h:120:16:   required from ‘_ForwardIterator std::__do_uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = __gnu_cxx::__normal_iterator<const dlib::vector<long int, 2>*, vector<dlib::vector<long int, 2> > >; _ForwardIterator = dlib::vector<long int, 2>*]’
+        /usr/include/c++/13.2.1/bits/stl_uninitialized.h:137:31:   required from ‘static _ForwardIterator std::__uninitialized_copy<_TrivialValueTypes>::__uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = __gnu_cxx::__normal_iterator<const dlib::vector<long int, 2>*, std::vector<dlib::vector<long int, 2> > >; _ForwardIterator = dlib::vector<long int, 2>*; bool _TrivialValueTypes = false]’
+        /usr/include/c++/13.2.1/bits/stl_uninitialized.h:184:90:   required from ‘_ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = __gnu_cxx::__normal_iterator<const dlib::vector<long int, 2>*, vector<dlib::vector<long int, 2> > >; _ForwardIterator = dlib::vector<long int, 2>*]’
+        /usr/include/c++/13.2.1/bits/stl_uninitialized.h:373:31:   required from ‘_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, allocator<_Tp>&) [with _InputIterator = __gnu_cxx::__normal_iterator<const dlib::vector<long int, 2>*, vector<dlib::vector<long int, 2> > >; _ForwardIterator = dlib::vector<long int, 2>*; _Tp = dlib::vector<long int, 2>]’
+        /usr/include/c++/13.2.1/bits/stl_vector.h:602:58:   required from ‘std::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = dlib::vector<long int, 2>; _Alloc = std::allocator<dlib::vector<long int, 2> >]’
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../dnn/../geometry/polygon.h:17:53:   required from here
+        /usr/include/c++/13.2.1/bits/stl_construct.h:119:46: error: call of overloaded ‘forward<const dlib::vector<long int, 2>&>(const dlib::vector<long int, 2>&)’ is ambiguous
+          119 |       ::new((void*)__p) _Tp(std::forward<_Args>(__args)...);
+              |                         ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+        /usr/include/c++/13.2.1/bits/move.h:70:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&) [with _Tp = const dlib::vector<long int, 2>&; typename remove_reference<_Functor>::type = const dlib::vector<long int, 2>&]’
+           70 |     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/move.h:82:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&&) [with _Tp = const dlib::vector<long int, 2>&; typename remove_reference<_Functor>::type = const dlib::vector<long int, 2>&]’
+           82 |     forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/alloc_traits.h: In instantiation of ‘static void std::allocator_traits<std::allocator<_CharT> >::construct(allocator_type&, _Up*, _Args&& ...) [with _Up = dlib::rectangle; _Args = {dlib::rectangle&}; _Tp = dlib::rectangle; allocator_type = std::allocator<dlib::rectangle>]’:
+        /usr/include/c++/13.2.1/bits/stl_uninitialized.h:1078:20:   required from ‘void std::__relocate_object_a(_Tp*, _Up*, _Allocator&) [with _Tp = dlib::rectangle; _Up = dlib::rectangle; _Allocator = allocator<dlib::rectangle>]’
+        /usr/include/c++/13.2.1/bits/stl_uninitialized.h:1106:25:   required from ‘_ForwardIterator std::__relocate_a_1(_InputIterator, _InputIterator, _ForwardIterator, _Allocator&) [with _InputIterator = dlib::rectangle*; _ForwardIterator = dlib::rectangle*; _Allocator = allocator<dlib::rectangle>]’
+        /usr/include/c++/13.2.1/bits/stl_uninitialized.h:1148:27:   required from ‘_ForwardIterator std::__relocate_a(_InputIterator, _InputIterator, _ForwardIterator, _Allocator&) [with _InputIterator = dlib::rectangle*; _ForwardIterator = dlib::rectangle*; _Allocator = allocator<dlib::rectangle>]’
+        /usr/include/c++/13.2.1/bits/stl_vector.h:492:25:   required from ‘static std::vector<_Tp, _Alloc>::pointer std::vector<_Tp, _Alloc>::_S_do_relocate(pointer, pointer, pointer, _Tp_alloc_type&, std::true_type) [with _Tp = dlib::rectangle; _Alloc = std::allocator<dlib::rectangle>; pointer = dlib::rectangle*; _Tp_alloc_type = std::vector<dlib::rectangle>::_Tp_alloc_type; std::true_type = std::integral_constant<bool, true>]’
+        /usr/include/c++/13.2.1/bits/stl_vector.h:509:22:   required from ‘static std::vector<_Tp, _Alloc>::pointer std::vector<_Tp, _Alloc>::_S_relocate(pointer, pointer, pointer, _Tp_alloc_type&) [with _Tp = dlib::rectangle; _Alloc = std::allocator<dlib::rectangle>; pointer = dlib::rectangle*; _Tp_alloc_type = std::vector<dlib::rectangle>::_Tp_alloc_type]’
+        /usr/include/c++/13.2.1/bits/vector.tcc:80:14:   required from ‘void std::vector<_Tp, _Alloc>::reserve(size_type) [with _Tp = dlib::rectangle; _Alloc = std::allocator<dlib::rectangle>; size_type = long unsigned int]’
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../matrix/../array2d/../geometry/rectangle.h:585:12:   required from here
+        /usr/include/c++/13.2.1/bits/alloc_traits.h:537:48: error: call of overloaded ‘forward<dlib::rectangle&>(dlib::rectangle&)’ is ambiguous
+          537 |           __a.construct(__p, std::forward<_Args>(__args)...);
+              |                           ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+        /usr/include/c++/13.2.1/bits/move.h:70:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&) [with _Tp = dlib::rectangle&; typename remove_reference<_Functor>::type = dlib::rectangle&]’
+           70 |     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/move.h:82:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&&) [with _Tp = dlib::rectangle&; typename remove_reference<_Functor>::type = dlib::rectangle&]’
+           82 |     forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/stl_construct.h: In instantiation of ‘void std::_Construct(_Tp*, _Args&& ...) [with _Tp = dlib::rectangle; _Args = {dlib::rectangle&}]’:
+        /usr/include/c++/13.2.1/bits/stl_uninitialized.h:120:16:   required from ‘_ForwardIterator std::__do_uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = move_iterator<dlib::rectangle*>; _ForwardIterator = dlib::rectangle*]’
+        /usr/include/c++/13.2.1/bits/stl_uninitialized.h:137:31:   required from ‘static _ForwardIterator std::__uninitialized_copy<_TrivialValueTypes>::__uninit_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = std::move_iterator<dlib::rectangle*>; _ForwardIterator = dlib::rectangle*; bool _TrivialValueTypes = false]’
+        /usr/include/c++/13.2.1/bits/stl_uninitialized.h:184:90:   required from ‘_ForwardIterator std::uninitialized_copy(_InputIterator, _InputIterator, _ForwardIterator) [with _InputIterator = move_iterator<dlib::rectangle*>; _ForwardIterator = dlib::rectangle*]’
+        /usr/include/c++/13.2.1/bits/stl_uninitialized.h:373:31:   required from ‘_ForwardIterator std::__uninitialized_copy_a(_InputIterator, _InputIterator, _ForwardIterator, allocator<_Tp>&) [with _InputIterator = move_iterator<dlib::rectangle*>; _ForwardIterator = dlib::rectangle*; _Tp = dlib::rectangle]’
+        /usr/include/c++/13.2.1/bits/stl_vector.h:1619:28:   required from ‘std::vector<_Tp, _Alloc>::pointer std::vector<_Tp, _Alloc>::_M_allocate_and_copy(size_type, _ForwardIterator, _ForwardIterator) [with _ForwardIterator = std::move_iterator<dlib::rectangle*>; _Tp = dlib::rectangle; _Alloc = std::allocator<dlib::rectangle>; pointer = dlib::rectangle*; size_type = long unsigned int]’
+        /usr/include/c++/13.2.1/bits/vector.tcc:86:29:   required from ‘void std::vector<_Tp, _Alloc>::reserve(size_type) [with _Tp = dlib::rectangle; _Alloc = std::allocator<dlib::rectangle>; size_type = long unsigned int]’
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../matrix/../array2d/../geometry/rectangle.h:585:12:   required from here
+        /usr/include/c++/13.2.1/bits/stl_construct.h:119:46: error: call of overloaded ‘forward<dlib::rectangle&>(dlib::rectangle&)’ is ambiguous
+          119 |       ::new((void*)__p) _Tp(std::forward<_Args>(__args)...);
+              |                         ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+        /usr/include/c++/13.2.1/bits/move.h:70:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&) [with _Tp = dlib::rectangle&; typename remove_reference<_Functor>::type = dlib::rectangle&]’
+           70 |     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/move.h:82:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&&) [with _Tp = dlib::rectangle&; typename remove_reference<_Functor>::type = dlib::rectangle&]’
+           82 |     forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/vector.tcc: In instantiation of ‘void std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {unsigned char&}; _Tp = unsigned char; _Alloc = std::allocator<unsigned char>]’:
+        /usr/include/c++/13.2.1/bits/stl_vector.h:1296:15:   required from ‘void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = unsigned char; _Alloc = std::allocator<unsigned char>; value_type = unsigned char]’
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../matrix/../vectorstream/vectorstream.h:78:19:   required from ‘std::basic_streambuf<char>::int_type dlib::vectorstream::vector_streambuf<CharType>::overflow(std::basic_streambuf<char>::int_type) [with CharType = unsigned char; std::basic_streambuf<char>::int_type = int]’
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../matrix/../vectorstream/vectorstream.h:76:18:   required from here
+        /usr/include/c++/13.2.1/bits/vector.tcc:117:100: error: call of overloaded ‘forward<unsigned char&>(unsigned char&)’ is ambiguous
+          117 |             _Alloc_traits::construct(this->_M_impl, this->_M_impl._M_finish,
+              |                                                                                                    ^       
+        /usr/include/c++/13.2.1/bits/move.h:70:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&) [with _Tp = unsigned char&; typename remove_reference<_Functor>::type = unsigned char&]’
+           70 |     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/move.h:82:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&&) [with _Tp = unsigned char&; typename remove_reference<_Functor>::type = unsigned char&]’
+           82 |     forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/vector.tcc:123:54: error: call of overloaded ‘forward<unsigned char&>(unsigned char&)’ is ambiguous
+          123 |           _M_realloc_insert(end(), std::forward<_Args>(__args)...);
+              |                                 ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+        /usr/include/c++/13.2.1/bits/move.h:70:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&) [with _Tp = unsigned char&; typename remove_reference<_Functor>::type = unsigned char&]’
+           70 |     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/move.h:82:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&&) [with _Tp = unsigned char&; typename remove_reference<_Functor>::type = unsigned char&]’
+           82 |     forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/vector.tcc: In instantiation of ‘void std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {signed char&}; _Tp = signed char; _Alloc = std::allocator<signed char>]’:
+        /usr/include/c++/13.2.1/bits/stl_vector.h:1296:15:   required from ‘void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = signed char; _Alloc = std::allocator<signed char>; value_type = signed char]’
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../matrix/../vectorstream/vectorstream.h:78:19:   required from ‘std::basic_streambuf<char>::int_type dlib::vectorstream::vector_streambuf<CharType>::overflow(std::basic_streambuf<char>::int_type) [with CharType = signed char; std::basic_streambuf<char>::int_type = int]’
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../matrix/../vectorstream/vectorstream.h:76:18:   required from here
+        /usr/include/c++/13.2.1/bits/vector.tcc:117:100: error: call of overloaded ‘forward<signed char&>(signed char&)’ is ambiguous
+          117 |             _Alloc_traits::construct(this->_M_impl, this->_M_impl._M_finish,
+              |                                                                                                    ^       
+        /usr/include/c++/13.2.1/bits/move.h:70:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&) [with _Tp = signed char&; typename remove_reference<_Functor>::type = signed char&]’
+           70 |     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/move.h:82:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&&) [with _Tp = signed char&; typename remove_reference<_Functor>::type = signed char&]’
+           82 |     forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/vector.tcc:123:54: error: call of overloaded ‘forward<signed char&>(signed char&)’ is ambiguous
+          123 |           _M_realloc_insert(end(), std::forward<_Args>(__args)...);
+              |                                 ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+        /usr/include/c++/13.2.1/bits/move.h:70:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&) [with _Tp = signed char&; typename remove_reference<_Functor>::type = signed char&]’
+           70 |     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/move.h:82:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&&) [with _Tp = signed char&; typename remove_reference<_Functor>::type = signed char&]’
+           82 |     forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/vector.tcc: In instantiation of ‘void std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {char&}; _Tp = char; _Alloc = std::allocator<char>]’:
+        /usr/include/c++/13.2.1/bits/stl_vector.h:1296:15:   required from ‘void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = char; _Alloc = std::allocator<char>; value_type = char]’
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../matrix/../vectorstream/vectorstream.h:78:19:   required from ‘std::basic_streambuf<char>::int_type dlib::vectorstream::vector_streambuf<CharType>::overflow(std::basic_streambuf<char>::int_type) [with CharType = char; std::basic_streambuf<char>::int_type = int]’
+        /home/info/FaceDetectionSerial/dlib/dlib/cmake_utils/test_for_cuda/../../cuda/../matrix/../vectorstream/vectorstream.h:76:18:   required from here
+        /usr/include/c++/13.2.1/bits/vector.tcc:117:100: error: call of overloaded ‘forward<char&>(char&)’ is ambiguous
+          117 |             _Alloc_traits::construct(this->_M_impl, this->_M_impl._M_finish,
+              |                                                                                                    ^       
+        /usr/include/c++/13.2.1/bits/move.h:70:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&) [with _Tp = char&; typename remove_reference<_Functor>::type = char&]’
+           70 |     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/move.h:82:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&&) [with _Tp = char&; typename remove_reference<_Functor>::type = char&]’
+           82 |     forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/vector.tcc:123:54: error: call of overloaded ‘forward<char&>(char&)’ is ambiguous
+          123 |           _M_realloc_insert(end(), std::forward<_Args>(__args)...);
+              |                                 ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~
+        /usr/include/c++/13.2.1/bits/move.h:70:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&) [with _Tp = char&; typename remove_reference<_Functor>::type = char&]’
+           70 |     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
+              | ^   ~~~
+        /usr/include/c++/13.2.1/bits/move.h:82:1: note: candidate: ‘constexpr _Tp&& std::forward(typename remove_reference<_Functor>::type&&) [with _Tp = char&; typename remove_reference<_Functor>::type = char&]’
+           82 |     forward(typename std::remove_reference<_Tp>::type&& __t) noexcept
+              | ^   ~~~
+        -- Removing /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//./cuda_test_generated_cuda_test.cu.o
+        /usr/bin/cmake -E rm -f /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//./cuda_test_generated_cuda_test.cu.o
+        CMake Error at cuda_test_generated_cuda_test.cu.o.cmake:276 (message):
+          Error generating file
+          /home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir//./cuda_test_generated_cuda_test.cu.o
+        
+        
+        make[2]: *** [CMakeFiles/cuda_test.dir/build.make:77: CMakeFiles/cuda_test.dir/cuda_test_generated_cuda_test.cu.o] Error 1
+        make[2]: Leaving directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build'
+        make[1]: *** [CMakeFiles/Makefile2:82: CMakeFiles/cuda_test.dir/all] Error 2
+        make[1]: Leaving directory '/home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build'
+        make: *** [Makefile:91: all] Error 2
+        
+      exitCode: 2
+...

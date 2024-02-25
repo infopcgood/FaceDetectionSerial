@@ -1,0 +1,3 @@
+/home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/cuda_test.dir
+/home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/edit_cache.dir
+/home/info/FaceDetectionSerial/build/dlib_build/dlib/cuda_test_build/CMakeFiles/rebuild_cache.dir

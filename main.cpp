@@ -114,6 +114,7 @@ int main(int argc, const char** argv) {
         uint64_t startTime = timeMS();
         // Read frame until it can't
         if(!cap.read(camFrame)){
+            cerr << "Error " << errno << " from cap.read(camFrame): " << strerror(errno) << endl;
             break;
         }
 

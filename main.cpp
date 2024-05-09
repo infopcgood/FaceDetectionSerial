@@ -1,3 +1,7 @@
+// defines for debugging
+#define USE_GUI
+#define PRINT_FPS
+
 // Standard C++ headers
 #include <iostream>
 #include <iomanip>
@@ -23,6 +27,12 @@
 #include <dlib/image_processing/frontal_face_detector.h>
 #include <dlib/opencv.h>
 #include <dlib/image_io.h>
+
+// DLib GUI headers
+#ifdef USE_GUI
+#include <dlib/image_processing/render_face_detections.h>
+#include <dlib/gui_widgets.h>
+#endif
 
 // Default namespaces
 using namespace cv;
@@ -129,6 +139,11 @@ int main(int argc, const char** argv) {
     shape_predictor shapePredictor;
     deserialize("shape_predictor_68_face_landmarks.dat") >> shapePredictor;
 
+    // Initialize image window
+    #ifdef USE_GUI
+    image_window win;
+    #endif
+
     while(true) {
         // Set start time
         uint64_t startTime = timeMS();
@@ -148,7 +163,7 @@ int main(int argc, const char** argv) {
 
         // Make smallframe
         cvtColor(camFrame, smallFrame, COLOR_BGR2GRAY);
-        resize(smallFrame, smallFrame, Size(), 0.25, 0.25);
+        resize(smallFrame, smallFrame, Size(), 0.333, 0.333);
         cv_image<unsigned char> dlibSmallFrame(smallFrame);
 
         // Detect faces from converted dlib frame
@@ -162,10 +177,10 @@ int main(int argc, const char** argv) {
 
         // Else, get your face
         dlib::rectangle face = detectedFaces[0];
-        face.set_left(face.left() * 4);
-        face.set_right(face.right() * 4);
-        face.set_top(face.top() * 4);
-        face.set_bottom(face.bottom() * 4);
+        face.set_left(face.left() * 3);
+        face.set_right(face.right() * 3);
+        face.set_top(face.top() * 3);
+        face.set_bottom(face.bottom() * 3);
 
         // Detect shapes from your face
         full_object_detection shape = shapePredictor(dlibFrame, face);
@@ -195,8 +210,20 @@ int main(int argc, const char** argv) {
 
         cerr << checkMovement(mouthWidthDerivative, 75) << " " << checkMovement(mouthHeightDerivative, 50) << endl;
 
+        // Display face
+        #ifdef USE_GUI
+        std::vector<full_object_detection> shapes;
+        shapes.push_back(shape);
+
+        win.clear_overlay();
+        win.set_image(dlibFrame);
+        win.add_overlay(render_face_detections(shapes));
+        #endif
+
         // Print FPS
-        // cerr << 1000.0f / (double)(timeMS() - startTime) << " FPS" << endl;
+        #ifdef PRINT_FPS
+        cerr << 1000.0f / (double)(timeMS() - startTime) << " FPS" << endl;
+        #endif
     }
 
     // End of program, probably will not be called since power would just cut off
